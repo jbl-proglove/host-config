@@ -7,12 +7,12 @@
     ../profiles/laptop
     ../profiles/misc/disable-mitigations.nix
     ../users/julius
-#    ../profiles/network/torrent.nix
-#    ../profiles/graphical/games
-#    ../profiles/virt
+    #    ../profiles/network/torrent.nix
+    #    ../profiles/graphical/games
+    #    ../profiles/virt
   ];
 
-#  environment.systemPackages = [ pkgs.system76-firmware ];
+  #  environment.systemPackages = [ pkgs.system76-firmware ];
 
   boot.initrd.availableKernelModules =
     [ "xhci_pci" "ahci" "nvme" "sd_mod" "sdhci_pci" ];
@@ -39,10 +39,10 @@
     };
   };
 
-#  hardware.opengl.extraPackages = with pkgs; [
-#    vaapiVdpau
-#    libvdpau-va-gl
-#  ];
+  #  hardware.opengl.extraPackages = with pkgs; [
+  #    vaapiVdpau
+  #    libvdpau-va-gl
+  #  ];
 
   boot.initrd.secrets = { "/luks.keyfile" = ../secrets/luks.keyfile; };
 
@@ -62,7 +62,7 @@
 
   nix.maxJobs = lib.mkDefault 16;
 
-#  services.xserver.videoDrivers = [ "nvidia" ];
+  #  services.xserver.videoDrivers = [ "nvidia" ];
 
   services.fstrim.enable = true;
 

@@ -7,6 +7,7 @@ let
 in
 {
   imports = [ ../../profiles/develop ./graphical ];
+  # TODO set keyboard to German (confifguration.nix: console.keyMap = "de";)
 
   users.users.root.hashedPassword = fileContents ../../secrets/root;
 
