@@ -22,7 +22,7 @@ in
       file = {
         ".zshrc".text = "#";
         ".gnupg/gpg-agent.conf".text = ''
-          pinentry-program ${pkgs.pinentry_curses}/bin/pinentry_curses
+          pinentry-program ${pkgs.pinentry_curses}/bin/pinentry-curses
         '';
       };
     };
