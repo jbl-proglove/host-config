@@ -3,7 +3,7 @@
 #   qute://help/settings.html
 
 # Uncomment this to still load settings configured via autoconfig.yml
-# config.load_autoconfig()
+config.load_autoconfig(False)
 
 # Require a confirmation before quitting the application.
 # Type: ConfirmQuit
@@ -47,7 +47,7 @@ c.content.webrtc_ip_handling_policy = "default-public-interface-only"
 
 # Enable host blocking.
 # Type: Bool
-c.content.host_blocking.enabled = False
+c.content.blocking.enabled = False
 
 # Allow JavaScript to read from or write to the clipboard. With
 # QtWebEngine, writing the clipboard as response to a user interaction
