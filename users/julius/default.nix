@@ -12,7 +12,7 @@ in
     enable = true;
     enableSSHSupport = true;
   };
-  
+
   # TODO pull in packages from github.com/juliusblank/nix-home
 
   home-manager.users.julius = {
@@ -51,14 +51,14 @@ in
             extraOptions = { AddKeysToAgent = "yes"; };
           };
         };
-      };
     };
-    
-    users.users.julius = {
-      uid = 1011;
-      description = name;
-      hashedPassword = fileContents ../../secrets/julius;
-      isNormalUser = true;
-      extraGroups = [ "wheel" ];
-    };
+  };
+
+  users.users.julius = {
+    uid = 1011;
+    description = name;
+    hashedPassword = fileContents ../../secrets/julius;
+    isNormalUser = true;
+    extraGroups = [ "wheel" ];
+  };
 }
