@@ -1,5 +1,6 @@
 {
-  services.xserver.displayManager = {
-    defaultSession = "none+xmonad";
+  services.xserver = {
+    displayManager.defaultSession = "none+xmonad";
+    layout = "de";
   };
 }

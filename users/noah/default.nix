@@ -13,6 +13,13 @@ in
 
   home-manager.users.noah = {
     imports = [ ../profiles/git ../profiles/alacritty ../profiles/direnv ];
+
+    home = {
+      file = {
+        ".zshrc".text = "#";
+      };
+    };
+
   };
 
   users.users.noah = {
@@ -20,6 +27,6 @@ in
     description = name;
     hashedPassword = fileContents ../../secrets/noah;
     isNormalUser = true;
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "wheel" "networkmanager" ];
   };
 }
