@@ -12,7 +12,7 @@ in
   users.users.root.hashedPassword = fileContents ../../secrets/root;
 
   home-manager.users.noah = {
-    imports = [ ../profiles/git ../profiles/alacritty ../profiles/direnv ];
+    imports = [ ../profiles/git ../profiles/alacritty ../profiles/direnv ../profiles/firefox ];
 
     home = {
       file = {
